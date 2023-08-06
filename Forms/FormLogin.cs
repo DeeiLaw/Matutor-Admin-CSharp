@@ -10,21 +10,19 @@ using System.Windows.Forms;
 
 namespace Matutor_Admin.Forms
 {
-    public partial class FormRegistration : Form
+    public partial class FormLogin : Form
     {
-        public FormRegistration()
+        public FormLogin()
         {
             InitializeComponent();
         }
 
-        private void button_approve_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FormRegistration_Load(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            var form2 = new Dashboard();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
         }
     }
 }

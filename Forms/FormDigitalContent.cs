@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Matutor_Admin.Forms
 {
-    public partial class FormRegistration : Form
+    public partial class FormDigitalContent : Form
     {
-        public FormRegistration()
+        public FormDigitalContent()
         {
             InitializeComponent();
-        }
-
-        private void button_approve_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormRegistration_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

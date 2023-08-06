@@ -84,6 +84,7 @@
             this.button6.TabIndex = 8;
             this.button6.Text = "log out";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox1
             // 
@@ -168,6 +169,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Manage Review";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -183,6 +185,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Manage Content";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button2
             // 
@@ -198,6 +201,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Subscriptions";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // panelMain
             // 
