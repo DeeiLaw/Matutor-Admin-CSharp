@@ -106,5 +106,22 @@ namespace Matutor_Admin
             form2.Closed += (s, args) => this.Close();
             form2.Show();
         }
+
+        private void button_notif_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormNotif());
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ActiivateButton(sender);
+            OpenChildForm(new Forms.FormPosting());
+        }
+
+        private void button_booked_Click(object sender, EventArgs e)
+        {
+            ActiivateButton(sender);
+            OpenChildForm(new Forms.FormDashboard());
+        }
     }
 }

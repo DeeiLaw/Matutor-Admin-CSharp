@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Matutor_Admin.Forms
 {
-    public partial class FormSubscriptions : Form
+    public partial class FormNotif : Form
     {
-        public FormSubscriptions()
+        public FormNotif()
         {
             InitializeComponent();
-        }
-
-        private void button_delete_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
