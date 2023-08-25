@@ -123,5 +123,11 @@ namespace Matutor_Admin
             ActiivateButton(sender);
             OpenChildForm(new Forms.FormDashboard());
         }
+
+        private void button_bookings_Click(object sender, EventArgs e)
+        {
+            ActiivateButton(sender);
+            OpenChildForm(new Forms.FormBookings());
+        }
     }
 }

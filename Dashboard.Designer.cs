@@ -42,6 +42,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button_postings = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.button_bookings = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,6 +59,7 @@
             this.panelMenu.Controls.Add(this.button5);
             this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.button_postings);
+            this.panelMenu.Controls.Add(this.button_bookings);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
@@ -232,6 +234,22 @@
             this.panelMain.Size = new System.Drawing.Size(798, 517);
             this.panelMain.TabIndex = 1;
             // 
+            // button_bookings
+            // 
+            this.button_bookings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(77)))), ((int)(((byte)(248)))));
+            this.button_bookings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_bookings.FlatAppearance.BorderSize = 0;
+            this.button_bookings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_bookings.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button_bookings.ForeColor = System.Drawing.SystemColors.Control;
+            this.button_bookings.Location = new System.Drawing.Point(3, 439);
+            this.button_bookings.Name = "button_bookings";
+            this.button_bookings.Size = new System.Drawing.Size(197, 38);
+            this.button_bookings.TabIndex = 8;
+            this.button_bookings.Text = "Bookings";
+            this.button_bookings.UseVisualStyleBackColor = false;
+            this.button_bookings.Click += new System.EventHandler(this.button_bookings_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -263,5 +281,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button_notif;
         private System.Windows.Forms.Button button_postings;
+        private System.Windows.Forms.Button button_bookings;
     }
 }
