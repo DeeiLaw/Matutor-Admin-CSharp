@@ -19,6 +19,9 @@ namespace Matutor_Admin
         public Dashboard()
         {
             InitializeComponent();
+            button_dash.BackColor = Color.FromArgb(47, 60, 192);
+            button_dash.ForeColor = SystemColors.ControlDarkDark;
+            button_dash.Enabled = false;
             OpenChildForm(new Forms.FormDashboard());
         }
 
@@ -45,8 +48,9 @@ namespace Matutor_Admin
                 if(currentButton != (Button)btnSender)
                 {
                     currentButton = (Button)btnSender;
-                    currentButton.BackColor = Color.FromArgb(124, 136, 250);
+                    currentButton.BackColor = Color.FromArgb(47,60,192);
                     currentButton.ForeColor = SystemColors.ControlDarkDark;
+                    currentButton.Enabled = false;
                 }
             }
         }
@@ -59,6 +63,7 @@ namespace Matutor_Admin
                 {
                     previousBtn.BackColor = Color.FromArgb(60, 77, 248);
                     previousBtn.ForeColor = SystemColors.Control;
+                    previousBtn.Enabled = true;
                 }
             }
         } 
@@ -110,6 +115,7 @@ namespace Matutor_Admin
         private void button_notif_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.FormNotif());
+            ActiivateButton(sender);
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -128,6 +134,22 @@ namespace Matutor_Admin
         {
             ActiivateButton(sender);
             OpenChildForm(new Forms.FormBookings());
+        }
+
+        private void button_dash_Click(object sender, EventArgs e)
+        {
+            ActiivateButton(sender);
+            OpenChildForm(new Forms.FormDashboard());
+        }
+
+        private void button_addTutor_Click(object sender, EventArgs e)
+        {
+            ActiivateButton(sender);
+        }
+
+        private void button_progressReport_Click(object sender, EventArgs e)
+        {
+            ActiivateButton(sender);
         }
     }
 }

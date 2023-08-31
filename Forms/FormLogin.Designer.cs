@@ -100,6 +100,7 @@
             this.Controls.Add(this.textBox_pw);
             this.Controls.Add(this.textBox_user);
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matutor Backend | LOGIN";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
