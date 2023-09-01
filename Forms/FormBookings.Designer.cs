@@ -30,12 +30,10 @@
         {
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_sender = new System.Windows.Forms.Label();
             this.label_reviewID = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,6 +47,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button_delete = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label_status = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,16 +69,6 @@
             this.textBox3.Size = new System.Drawing.Size(247, 25);
             this.textBox3.TabIndex = 31;
             this.textBox3.Text = "Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(367, 262);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 21);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Post Session Note:";
             // 
             // label2
             // 
@@ -116,17 +106,9 @@
             this.label_reviewID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label_reviewID.Location = new System.Drawing.Point(367, 23);
             this.label_reviewID.Name = "label_reviewID";
-            this.label_reviewID.Size = new System.Drawing.Size(195, 15);
+            this.label_reviewID.Size = new System.Drawing.Size(89, 15);
             this.label_reviewID.TabIndex = 26;
-            this.label_reviewID.Text = "Booking Status: ONGOING / ENDED";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(367, 286);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(420, 164);
-            this.richTextBox1.TabIndex = 25;
-            this.richTextBox1.Text = "";
+            this.label_reviewID.Text = "Booking Status:";
             // 
             // dataGridView1
             // 
@@ -244,7 +226,7 @@
             this.button_delete.FlatAppearance.BorderSize = 0;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_delete.Location = new System.Drawing.Point(690, 456);
+            this.button_delete.Location = new System.Drawing.Point(476, 283);
             this.button_delete.Name = "button_delete";
             this.button_delete.Size = new System.Drawing.Size(97, 29);
             this.button_delete.TabIndex = 41;
@@ -253,22 +235,46 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(77)))), ((int)(((byte)(248)))));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(581, 456);
+            this.button2.Location = new System.Drawing.Point(367, 283);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 29);
             this.button2.TabIndex = 42;
             this.button2.Text = "Save Changes";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(367, 256);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(118, 15);
+            this.linkLabel1.TabIndex = 45;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "View Progress Report";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label_status
+            // 
+            this.label_status.AutoSize = true;
+            this.label_status.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label_status.ForeColor = System.Drawing.Color.Red;
+            this.label_status.Location = new System.Drawing.Point(462, 23);
+            this.label_status.Name = "label_status";
+            this.label_status.Size = new System.Drawing.Size(47, 15);
+            this.label_status.TabIndex = 44;
+            this.label_status.Text = "ENDED";
+            // 
             // FormBookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 501);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label_status);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button_delete);
             this.Controls.Add(this.textBox5);
@@ -281,12 +287,10 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_sender);
             this.Controls.Add(this.label_reviewID);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
@@ -301,12 +305,10 @@
         #endregion
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_sender;
         private System.Windows.Forms.Label label_reviewID;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
@@ -320,5 +322,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label_status;
     }
 }

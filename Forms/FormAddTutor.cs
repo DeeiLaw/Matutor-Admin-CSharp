@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Matutor_Admin.Forms
 {
-    public partial class FormBookings : Form
+    public partial class FormAddTutor : Form
     {
-        public FormBookings()
+        public FormAddTutor()
         {
             InitializeComponent();
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           
         }
     }
 }

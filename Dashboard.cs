@@ -145,11 +145,13 @@ namespace Matutor_Admin
         private void button_addTutor_Click(object sender, EventArgs e)
         {
             ActiivateButton(sender);
+            OpenChildForm(new Forms.FormAddTutor());
         }
 
         private void button_progressReport_Click(object sender, EventArgs e)
         {
             ActiivateButton(sender);
+            OpenChildForm(new Forms.FormProgressReport());
         }
     }
 }

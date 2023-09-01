@@ -61,7 +61,6 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(77)))), ((int)(((byte)(248)))));
             this.panelMenu.Controls.Add(this.panel_user);
             this.panelMenu.Controls.Add(this.button_dash);
@@ -77,10 +76,11 @@
             this.panelMenu.Controls.Add(this.button_postings);
             this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.panel2);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(182, 536);
+            this.panelMenu.Size = new System.Drawing.Size(182, 560);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.WrapContents = false;
             // 
@@ -384,7 +384,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(3, 496);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(176, 41);
+            this.panel2.Size = new System.Drawing.Size(176, 64);
             this.panel2.TabIndex = 0;
             // 
             // button_logout
@@ -395,7 +395,7 @@
             this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_logout.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button_logout.ForeColor = System.Drawing.SystemColors.Control;
-            this.button_logout.Location = new System.Drawing.Point(5, 7);
+            this.button_logout.Location = new System.Drawing.Point(5, 33);
             this.button_logout.Name = "button_logout";
             this.button_logout.Size = new System.Drawing.Size(51, 23);
             this.button_logout.TabIndex = 8;
@@ -408,7 +408,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Montserrat Medium", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(98, 24);
+            this.label2.Location = new System.Drawing.Point(98, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 10);
             this.label2.TabIndex = 16;
@@ -417,7 +417,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Matutor_Admin.Properties.Resources.logo_copy;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(99, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(74, 17);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -426,9 +426,9 @@
             // 
             // panelMain
             // 
-            this.panelMain.Location = new System.Drawing.Point(188, 12);
+            this.panelMain.Location = new System.Drawing.Point(190, 12);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(808, 508);
+            this.panelMain.Size = new System.Drawing.Size(816, 540);
             this.panelMain.TabIndex = 1;
             // 
             // Dashboard
@@ -436,7 +436,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1008, 532);
+            this.ClientSize = new System.Drawing.Size(1018, 560);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelMenu);
             this.Name = "Dashboard";
